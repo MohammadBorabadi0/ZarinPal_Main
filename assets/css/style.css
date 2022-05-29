@@ -312,3 +312,114 @@ body {
     width: 1170px;
   }
 }
+
+/* Banner  */
+
+.banner {
+  padding: 8rem 4rem;
+  margin: 3rem 0.8rem 0 0.8rem;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text {
+  color: #fff;
+}
+
+.banner-text h3 {
+  font-size: 2rem;
+  font-family: "yekanBakhHeavy";
+}
+
+.banner-text p {
+  font-size: 1.6rem;
+  font-family: "yekanBakhMedium";
+  margin: 0.5rem 0;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.banner-buttons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner-image img {
+  display: none;
+}
+
+.go-down-section {
+  display: flex;
+  justify-content: center;
+}
+
+.go-down {
+  background: url("../images/arrowbottom.svg") no-repeat;
+  width: 164px;
+  height: 78px;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.go-down img {
+  width: 1.7rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 7.3rem;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .banner-text h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .banner-text p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding: 4rem 4rem 8.5rem;
+    margin: 0 3.5rem;
+  }
+  .banner-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    width: 940px;
+    padding: 6rem 4rem 12rem;
+    margin: 2rem auto;
+  }
+  .banner-text h3 {
+    text-align: right;
+  }
+  .banner-text p {
+    text-align: right;
+  }
+  .banner-image img {
+    display: block;
+    width: 43rem;
+  }
+  .go-down {
+    transform: translateY(-75%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    width: 1170px;
+    padding: 12.4rem 6rem 8rem;
+  }
+  .banner-image img {
+    width: 50rem;
+  }
+}
