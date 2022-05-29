@@ -923,3 +923,19 @@ body {
     width: 1170px;
   }
 }
+
+/* Bell  */
+
+.bell {
+  background-color: #2e82ff;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.bell img {
+  width: 3rem;
+}
