@@ -808,3 +808,118 @@ body {
     width: 1170px;
   }
 }
+
+/* Footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  margin-top: 10rem;
+}
+
+.footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.footer-links div {
+  margin-bottom: 3rem;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links a {
+  font-family: "iranyekanwebmedium";
+  color: #000;
+}
+
+.footer-links p {
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #303030;
+}
+
+.footer-links a,
+.footer-links p {
+  font-size: 1.4rem;
+}
+
+.footer .social-media {
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer .social-media p {
+  font-family: "yekanBakhHeavy";
+  font-size: 2rem;
+  color: #303030;
+}
+
+.footer .social-media div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer .social-media a {
+  background-color: #eff4fe;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 576px) {
+  .footer-links p {
+    font-size: 1.6rem;
+  }
+  .footer-links a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .footer-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer .footer-links {
+    flex: 4;
+  }
+  .footer .social-media {
+    flex: 1;
+    margin: 0;
+    padding-left: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 1170px;
+  }
+}
