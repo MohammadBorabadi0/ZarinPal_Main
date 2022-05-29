@@ -660,3 +660,151 @@ body {
     border-right: 1px solid #e0e4e7;
   }
 }
+
+/* StartBox  */
+
+.start-box {
+  margin: 0 0.8rem;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
+  border-radius: 2rem;
+  width: calc(100% - 1.6rem);
+}
+
+.start-box h4 {
+  font-size: 1.8rem;
+  font-family: "yekanBakhHeavy";
+  color: #303030;
+}
+
+.start-box p {
+  font-size: 1.4rem;
+  font-family: "yekanBakhMedium";
+  color: #747480;
+  margin: 0.9rem 0;
+}
+
+.start-box a {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .start-box {
+    margin: 0 3.8rem;
+    width: calc(100% - 7.6rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .start-box {
+    width: 940px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .start-box {
+    width: 1170px;
+    height: 220px;
+    margin: 5rem auto;
+  }
+  .start-box h4 {
+    font-size: 2.8rem;
+  }
+  .start-box p {
+    font-size: 2.2rem;
+  }
+}
+
+/* Support  */
+
+.support {
+  width: calc(100% - 60px);
+  height: 70px;
+  margin: 5rem 3rem;
+  padding: 0;
+  border-radius: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.support-number p {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.support-request {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  background-color: #fbf6f1;
+}
+
+.support-number,
+.support-request {
+  font-size: 1.4rem;
+  font-family: "yekanBakhHeavy";
+  padding: 0.5rem 2rem;
+  border-radius: 3.5rem;
+}
+
+#line {
+  display: none;
+  font-weight: bold;
+}
+
+#phone-number,
+.support-request {
+  color: #21457f;
+}
+
+@media (min-width: 576px) {
+  .support-number,
+  .support-request {
+    font-size: 1.8rem;
+  }
+  .support-number p {
+    flex-direction: row;
+  }
+  .support-request {
+    margin-top: 2rem;
+  }
+  #line {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .support {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 6rem);
+    background-color: #fbf6f1;
+    padding: 0 2rem;
+  }
+  .support-request {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .support {
+    width: 940px;
+    margin: 5rem auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .support {
+    width: 1170px;
+  }
+}
